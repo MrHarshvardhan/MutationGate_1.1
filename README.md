@@ -1,4 +1,8 @@
-# MutationGate
+# MutationGate 1.1 Update version
+
+**This code now includes the modifications to prompt the user for the full path of the executable they want to execute. After receiving the input, it proceeds to execute the specified executable and performs the rest of the functionality as before.
+**
+
 MutationGate is a new approach to bypass EDR's inline hooking by utilizing hardware breakpoint to redirect the syscall.
 
 It works by calling an unhooked NTAPI and replacing the unhooked NTAPI's SSN with hooked NTAPI's. In this way, the syscall is redirected to the hooked NTAPI's, and the inline hook can be bypassed without loading the 2nd ntdll module or modifying bytes within loaded ntdll's memory space. 
